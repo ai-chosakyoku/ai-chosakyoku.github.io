@@ -32,7 +32,14 @@ a.card:hover{border-color:var(--red)}
 .sns{font-size:12px;color:#6e6a63;letter-spacing:.08em}
 .sns span,.sns a{margin:0 8px;color:#6e6a63;text-decoration:none}.sns a:hover{color:#e8e4dc}
 .copy{margin-top:14px;font-size:11px;color:#4a463f;letter-spacing:.2em;line-height:2}
-</style></head><body>
+.sns{margin-top:18px;display:flex;justify-content:center;gap:12px;flex-wrap:wrap}
+.sns a.snsbtn{display:inline-flex;align-items:center;gap:9px;margin:0;border:1px solid #3a363e;background:#161419;padding:10px 20px;border-radius:3px;color:#e8e4dc;font-size:12.5px;letter-spacing:.14em;transition:border-color .3s ease}
+.sns a.snsbtn b{color:#c33a2c;font-size:14px;font-weight:800}
+.sns a.snsbtn:hover{border-color:#c33a2c;color:#e8e4dc}.chbtns{display:flex;justify-content:center;gap:12px;margin:0 auto 8px;max-width:500px;margin-left:auto;margin-right:auto}
+.chbtn{display:flex;flex-direction:column;align-items:center;gap:3px;flex:1 1 150px;max-width:240px;background:#1a181c;border:1px solid #2c2930;color:#e8e4dc;text-decoration:none;font-size:13.5px;letter-spacing:.1em;padding:14px 10px;border-radius:4px;transition:border-color .3s ease}
+.chbtn:hover{border-color:#c33a2c}
+.chbtn b{color:#c33a2c;font-size:17px;font-weight:800}
+.chbtn span{font-size:11px;color:#9a948a;letter-spacing:.08em}</style></head><body>
 <div class="wrap">
 
 <div class="topbar"><b>AI調査局</b><span class="tb-sub">CASE FILE ARCHIVE</span></div>
@@ -43,7 +50,10 @@ a.card:hover{border-color:var(--red)}
 <div class="tagline">未解決ファイル資料室 — 物語で没入し、検証で確かめる。</div>
 </div>
 
-<a class="ytbtn" href="https://www.youtube.com/@ai-chosakyoku" target="_blank" rel="noopener"><b>▶</b>　動画版はYouTubeで — 毎日20時に新着ファイル</a>
+<div class="chbtns">
+<a class="chbtn" href="https://www.youtube.com/@ai-chosakyoku" target="_blank" rel="noopener"><b>▶</b>YouTube<span>毎日20時、新着ファイル</span></a>
+<a class="chbtn" href="https://x.com/AI_chosakyoku" target="_blank" rel="noopener"><b>X</b>@AI_chosakyoku<span>局の窓口・速報</span></a>
+</div>
 
 <div class="creed">世界には、説明のつかない記録が残っている。<br>当局はそれを、怖がらせるためではなく、確かめるために開く。<br>確認できないことは、確認できないまま保管する。</div>
 
@@ -119,7 +129,10 @@ a.card:hover{border-color:var(--red)}
 </div>
 
 <div class="foot">
-<div class="sns"><span>X（準備中）</span>・<a href="https://www.youtube.com/@ai-chosakyoku" target="_blank" rel="noopener">YouTube</a></div>
+<div class="sns">
+<a class="snsbtn" href="https://x.com/AI_chosakyoku" target="_blank" rel="noopener"><b>X</b>@AI_chosakyoku</a>
+<a class="snsbtn" href="https://www.youtube.com/@ai-chosakyoku" target="_blank" rel="noopener"><b>▶</b>YouTube — 毎日20時</a>
+</div>
 <div class="copy">© AI調査局<br>AIの調査・執筆＋編集長（人間）の編集・検品・公開判断で運営しています。<br>確認できないことは断定しません。恐怖を煽って金銭を得ることはしません。<br>記事・画像の無断転載、AI学習への無断利用を禁じます<br>アクセス解析にGoogleアナリティクスを使用しています（匿名の閲覧データがGoogleに送信されます）。</div>
 </div>
 
