@@ -95,7 +95,18 @@ a.next:hover{border-color:var(--red)}
 .sns{margin-top:18px;display:flex;justify-content:center;gap:12px;flex-wrap:wrap}
 .sns a.snsbtn{display:inline-flex;align-items:center;gap:9px;margin:0;border:1px solid #3a363e;background:#161419;padding:10px 20px;border-radius:3px;color:#e8e4dc;font-size:12.5px;letter-spacing:.14em;transition:border-color .3s ease}
 .sns a.snsbtn b{color:#c33a2c;font-size:14px;font-weight:800}
-.sns a.snsbtn:hover{border-color:#c33a2c;color:#e8e4dc}</style>
+.sns a.snsbtn:hover{border-color:#c33a2c;color:#e8e4dc}/*IMM2*/
+::selection{background:#c33a2c;color:#fff}
+body::before{content:'';position:fixed;inset:0;z-index:8;pointer-events:none;opacity:.05;background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxODAnIGhlaWdodD0nMTgwJz48ZmlsdGVyIGlkPSduJz48ZmVUdXJidWxlbmNlIHR5cGU9J2ZyYWN0YWxOb2lzZScgYmFzZUZyZXF1ZW5jeT0nMC44NScgbnVtT2N0YXZlcz0nMicgc3RpdGNoVGlsZXM9J3N0aXRjaCcvPjwvZmlsdGVyPjxyZWN0IHdpZHRoPScxODAnIGhlaWdodD0nMTgwJyBmaWx0ZXI9J3VybCgjbiknLz48L3N2Zz4=);background-size:180px}
+body::after{content:'';position:fixed;inset:-5%;z-index:7;pointer-events:none;background:radial-gradient(ellipse at 50% 38%,transparent 60%,rgba(0,0,0,.38) 100%)}
+.readbar{position:fixed;top:0;left:0;width:100%;height:2px;background:linear-gradient(90deg,#c33a2c,#e0604f);transform-origin:0 50%;transform:scaleX(0);z-index:11}
+.story{font-family:"Yu Mincho","Hiragino Mincho ProN",serif;font-size:15.5px;line-height:2.25;letter-spacing:.02em}
+.hero{overflow:hidden}
+.hero img{animation:heroken 26s ease-out both}
+@keyframes heroken{from{transform:scale(1.07)}to{transform:scale(1)}}
+.log{position:relative;overflow:hidden}
+.log::after{content:'';position:absolute;inset:0;pointer-events:none;background:repeating-linear-gradient(0deg,rgba(255,255,255,.016) 0 1px,transparent 1px 3px)}
+@media (prefers-reduced-motion: reduce){.hero img{animation:none}}</style>
 <body>
 <div class="wrap">
 
@@ -317,4 +328,10 @@ AI調査局 — FILE No.007「杉沢村」<br>CLOSED（実在の記録なし—�
   });
 })();
 </script>
-</body></html>
+<script>(function(){
+var pb=document.createElement('div');pb.className='readbar';document.body.appendChild(pb);
+function u(){var h=document.documentElement;var m=h.scrollHeight-h.clientHeight;var y=window.pageYOffset||h.scrollTop;pb.style.transform='scaleX('+(m>0?y/m:0)+')'}
+window.addEventListener('scroll',u,{passive:true});window.addEventListener('resize',u);u();
+var parts=document.querySelectorAll('.part');
+if(parts.length>=2){var n=parts[0].nextElementSibling;while(n&&n!==parts[1]){if(n.tagName==='P')n.classList.add('story');n=n.nextElementSibling}}
+})();</script></body></html>

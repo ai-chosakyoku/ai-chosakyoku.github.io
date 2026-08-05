@@ -39,7 +39,14 @@ a.card:hover{border-color:var(--red)}
 .chbtn{display:flex;flex-direction:column;align-items:center;gap:3px;flex:1 1 150px;max-width:240px;background:#1a181c;border:1px solid #2c2930;color:#e8e4dc;text-decoration:none;font-size:13.5px;letter-spacing:.1em;padding:14px 10px;border-radius:4px;transition:border-color .3s ease}
 .chbtn:hover{border-color:#c33a2c}
 .chbtn b{color:#c33a2c;font-size:17px;font-weight:800}
-.chbtn span{font-size:11px;color:#9a948a;letter-spacing:.08em}</style></head><body>
+.chbtn span{font-size:11px;color:#9a948a;letter-spacing:.08em}/*IMM2*/
+::selection{background:#c33a2c;color:#fff}
+body::before{content:'';position:fixed;inset:0;z-index:8;pointer-events:none;opacity:.05;background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxODAnIGhlaWdodD0nMTgwJz48ZmlsdGVyIGlkPSduJz48ZmVUdXJidWxlbmNlIHR5cGU9J2ZyYWN0YWxOb2lzZScgYmFzZUZyZXF1ZW5jeT0nMC44NScgbnVtT2N0YXZlcz0nMicgc3RpdGNoVGlsZXM9J3N0aXRjaCcvPjwvZmlsdGVyPjxyZWN0IHdpZHRoPScxODAnIGhlaWdodD0nMTgwJyBmaWx0ZXI9J3VybCgjbiknLz48L3N2Zz4=);background-size:180px}
+body::after{content:'';position:fixed;inset:-5%;z-index:7;pointer-events:none;background:radial-gradient(ellipse at 50% 38%,transparent 60%,rgba(0,0,0,.38) 100%)}
+.hero-head .stamp{box-shadow:0 0 70px rgba(195,58,44,.28),0 0 24px rgba(195,58,44,.18)}
+h1{text-shadow:0 0 30px rgba(195,58,44,.22)}
+a.card img{transition:transform .6s ease}
+a.card:hover img{transform:scale(1.03)}</style></head><body>
 <div class="wrap">
 
 <div class="topbar"><b>AI調査局</b><span class="tb-sub">CASE FILE ARCHIVE</span></div>
